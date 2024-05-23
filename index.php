@@ -61,11 +61,31 @@
 
                  <button class="knop">Nu boeken</button>
                  <img src="assets/img/vliegtuig.png" id="logo4">
-
         </section>
+        <section>
+        <div class= review-box>
+                <h2> Laat een review achter:</h2>
+                <input type="text" id="review" name="review" placeholder="  Typen..." />
+                <input type="submit" value="versturen" class="verstuur-knop" />
+
+            </div>
+            <div class="top-review-box">
+    <div class="top-reviews">
+        <h3>"Marsia Travels was echt geweldig! De gidsen waren superaardig en wisten echt veel. Een echte aanrader!" - Anna J.</h3>
+    </div>
+    <div class="top-reviews">
+        <h3>"Van boeken tot terugkomen, alles was top! Geen stress, alleen maar plezier. Dank je wel, Marsia Travels!" - Sarah K.</h3>
+    </div>
+    <div class="top-reviews">
+        <h3>"Wat een top service! Alles was perfect geregeld. We gaan zeker nog eens met Marsia Travels op reis!" - Michael T.</h3>
+    </div>
+</div>
+</section>
 
 
+<footer>
     
-    
+</footer>
+
 </body>
 </html>
