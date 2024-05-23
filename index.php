@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+         <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,9 +23,9 @@
             </div>
 
             <div id="search-bar">
-        <p class="best1"></p>
-        <p class="best2"></p>
-        <p class="best3"></p>
+        <p class="bestemming"></p>
+        <p class="vertrek"></p>
+        <p class="aankomst"></p>
         <img src="assets/img/pinger.png" id="logo2">
         <img src="assets/img/zoek.png" id="logo3">
     </div>
