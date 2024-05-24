@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marsia travels</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  
-</head>
-<body>
-    <header>
-        <section id="logo-box">
-            <img src="assets/img/logoMarsiaTravels.png" id="logo">
-        <h1>
-            Marsia Travels  
-        </h1>
-        </section>
-    </header>
+<?php
+include "header.php";
+    ?>
+    <body>
         <section class="inleiding">   
         <div id="search-block">
             <div class="keuze-blocks">
@@ -57,7 +43,7 @@
                 <h2> Laat een review achter:</h2>
                 <input type="text" id="review" name="review" placeholder="  Typen..." />
                 <input type="submit" value="versturen" class="verstuur-knop" />
-
+    
             </div>
             <div class="top-review-box">
     <div class="top-reviews">
@@ -65,17 +51,14 @@
     </div>
     <div class="top-reviews">
         <h3>"Van boeken tot terugkomen, alles was top! Geen stress, alleen maar plezier. Dank je wel, Marsia Travels!" - Sarah K.</h3>
-    </div>
+    </div>  
     <div class="top-reviews">
         <h3>"Wat een top service! Alles was perfect geregeld. We gaan zeker nog eens met Marsia Travels op reis!" - Michael T.</h3>
     </div>
 </div>
 </section>
-
-
-<footer>
-    
-</footer>
-
 </body>
+<?php
+include "footer.php";
+    ?>
 </html>
