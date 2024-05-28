@@ -2,6 +2,7 @@
 include "header.php";
     ?>
     <body>
+
         <section class="inleiding">   
         <div id="search-block">
             <div class="keuze-blocks">
@@ -26,15 +27,22 @@ include "header.php";
                  de beste deals. Een échte ervaring, voor de beste prijs. 
                  Bij Marsia Travels begrijpen we dat reizen meer is dan alleen van A naar B gaan. Het gaat om
                  het creëren van onvergetelijke herinneringen, het ontdekken van nieuwe culturen en het
-                 beleven van avonturen die je voor altijd bij zullen blijven. Of je nu op zoek bent naar een ontspannende strandvakantie, een avontuurlijke trektocht
+                 beleven van avonturen die je voor altijd bij zullen blijven.
+                
+                 Of je nu op zoek bent naar een ontspannende strandvakantie, een avontuurlijke trektocht
                  door de jungle, of een culturele verkenningstocht door historische steden, wij hebben de
-                 perfecte reis voor jou. Onze ervaren reisadviseurs staan ​​klaar om je te helpen bij het plannen van jouw droomreis.
+                 perfecte reis voor jou.
+                
+                 Onze ervaren reisadviseurs staan ​​klaar om je te helpen bij het plannen van jouw droomreis.
                  Met onze uitgebreide kennis van bestemmingen over de hele wereld en ons streven naar
                  klanttevredenheid, zorgen we ervoor dat jouw reiservaring soepel verloopt van begin tot
                  eind.
-                 Dus waar wacht je nog op? Grab the deal & make it real! ✈️🌎Boek vandaag nog jouw volgende avontuur met Marsia Travels en maak je klaar voor een
-                 onvergetelijke reiservaring! </h2>
+                 Dus waar wacht je nog op? Grab the deal & make it real! ✈️🌎
 
+                 Boek vandaag nog jouw volgende avontuur met Marsia Travels en maak je klaar voor een
+                 onvergetelijke reiservaring! 
+               </h2>
+               
                  <button class="knop">Nu boeken</button>
                  <img src="assets/img/vliegtuig.png" id="logo4">
         </section>
