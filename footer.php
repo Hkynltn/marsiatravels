@@ -1,33 +1,41 @@
 <footer>
-    <div class="buttons-container">
-        <div class="button-column">
-            <button>Klanten service</button>
-            <button>Boek nu</button>
+<div class="button-container">
+    <div class="button-column">
+        <button class="text-button">Klanten service</button>
+    </div>
+    <div class="button-column">
+    <button class="text-button">Boek nu</button>
+    </div>
+</div>
+<div class="button-container">
+<div class="button-column">
+        <button class="text-button">Contact</button>
+    </div>
+    <div class="button-column">
+    <button class="text-button">Volg Marsia Travels</button>
+    </div>
+</div>
+<div class="row-footer">
+    <div class="row-footer">
+        <img id="apple" src="assets/img/applepay.png" alt="Applepay_Logo">
+        <img id="klarna" src="assets/img/klarna.png" alt="Klarna_Logo">
+        <img id="paypal" src="assets/img/paypal.png" alt="Paypal_Logo">
+        <img id="ideal" src="assets/img/ideal.png" alt="Ideal_Logo">
+    </div>
+    <div class="column-footer">
+        <div class="contact-row">
+            <img class="contact-instagram" src="assets/img/instagram.png" alt="Instagram_Logo">
+            <button class="text-button">Instagram</button>
         </div>
-        <div class="button-column">
-            <button>Contact</button>
-            <button>Volg Marsia Travels</button>
+        <div class="contact-row-facebook">
+            <img class="contact-facebook" src="assets/img/facebook.png" alt="Facebook_Logo">
+            <button class="text-button">Facebook</button>
+        </div>
+        <div class="contact-row-twitter">
+            <img class="contact-twitter" src="assets/img/twitter.png" alt="Twitter_Logo">
+            <button class="text-button">Twitter</button>
         </div>
     </div>
-    <div class="row">
-        <img id="apple" src="assets/img/applepay.png" alt="Applepay_Log">
-        <img id="klarna" src="assets/img/klarna.png" alt="Klarna_Log\">
-        <img id="paypal" src="assets/img/paypal.png" alt="Paypal_Log">
-        <img id="ideal" src="assets/img/ideal.png" alt="Ideal_Log
-    </div>
-    <div class="column">
-        <div>
-            <img src="assets/img/instagram.png" alt="Instagram_Logo">
-            <h2>Instagram</h2>
-        </div>
-        <div>
-            <img src="assets/img/facebook.png" alt="Facebook_Logo">
-            <h2>Facebook</h2>
-        </div>
-        <div>
-            <img src="assets/img/twitter.png" alt="Twitter_Logo">
-            <h2>Twitter</h2>
-        </div>
-    </div>
+</div>
 </footer>
 
