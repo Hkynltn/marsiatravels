@@ -199,6 +199,89 @@ p {
 
 footer{
     background-color:  #A7CFFB;
-    height: 400px;
+    height: 500px;
+}
+#apple{ 
+    height: 100px;
+    width: 100px;
+}
+#klarna{
+    height: 100px;
+    width: 100px;
+}
+#paypal{
+    height: 100px;
+    width: 100px;
+}
+#ideal {
+    height: 70px;
+    width: 100px;
+    position: relative;
+    top: 20px;
+}
+.contact-instagram{
+    height: 50px;
+    width: 50px;
+}
+.contact-facebook{
+    height: 80px;
+    width: 80px;
+}
+.contact-twitter{
+    height: 40px;
+    width: 80px;
+}
+.column-footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 600px;
+    gap: 20px;
+}
+.row-footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.button-container {
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
 
+.text-button {
+    background: none;
+    border: none;
+    color: inherit; 
+    font-size: inherit;
+    cursor: pointer; 
+    padding: 0;
+    margin: 0;
+}
+
+.text-button:hover {
+    text-decoration: underline;
+}
+.contact-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.contact-row-facebook{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    left: -15px;
+}
+.contact-row-twitter{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    left: -15px;
+}
