@@ -4,7 +4,7 @@
 }
 header{
     background-color:#8DBADE;
-   height: 180px;
+   height: 200px;
    position: relative;
    align-items:center ; 
    display: flex;
@@ -28,7 +28,7 @@ header{
 #patra{
     width: 100vw;
     height: 700px;
-  position: relative;
+  position: static;
 }
 #search-bar{
     display: flex;
@@ -48,7 +48,6 @@ header{
     color: white;
 }
 .inleiding{
-    width: 100vw;
     height: 400px;
     background-image: url(../img/patra.png);
     background-size: cover;
@@ -108,18 +107,24 @@ p {
     top: 90px;
     display: flex;
     justify-content: center;
-    left: -190px;
+    display: flex;
+    align-self: center;
+    padding: 50px;
+    
 }
 
 
 .beschrijving {
+    display: flex;
+    align-self: center;
+    width: 90vw;
     font-family: Arial, sans-serif;
     font-size: 18px;
     color: #333;
     line-height: 1.6;
     position: relative;
     top: 120px;
-    left: 15px;
+    left: 50px;
 }
 
 .knop{
@@ -284,4 +289,19 @@ footer{
     gap: 20px;
     position: relative;
     left: -15px;
+}
+.login-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 500px;
+    position: relative;
+    left: 200px;
+}
+.login-button img {
+    display: block;
+    max-width: 30%;
+    height: auto;
 }
