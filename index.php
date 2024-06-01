@@ -3,20 +3,38 @@ include "header.php";
     ?>
     <body>
 
-        <section class="inleiding">   
-        <div id="search-block">
-            <div class="keuze-blocks">
+    <section class="inleiding">
+        <div id="search-bar">
+            <form method="POST" action="zoek_vluchten.php">
+                <p>Vertrek:</p>
+                <select name="vertrek_land">
+                    <option value="Amsterdam">Amsterdam</option>
+                    <option value="Parijs">Parijs</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Tehran">Tehran</option>
+                    <option value="Erbil">Erbil</option>
+                </select>
+                <p>Aankomst:</p>
+                <select name="aankomst_land">
+                    <option value="Parijs">Parijs</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Tehran">Tehran</option>
+                    <option value="Erbil">Erbil</option>
+                    <option value="Cairo">Cairo</option>
+                </select>
+                <p>Vertrek datum:</p>
+                <input type="datetime-local" name="vertrek_tijd">
+                <p>Aankomst datum:</p>
+                <input type="datetime-local" name="aankomst_tijd">
+                <p class="best1"></p>
+                <p class="best2"></p>
+                <p class="best3"></p>
+                <button type="submit" class="search-button">Zoek Vluchten</button>
 
-            </div>
+            </form>
+        </div>
+    </section>
 
-            <div id="search-bar">
-        <p class="best1"></p>
-        <p class="best2"></p>
-        <p class="best3"></p>
-        <img src="assets/img/pinger.png" id="logo2">
-        <img src="assets/img/zoek.png" id="logo3">
-    </div>
-        </section>
 
 
         <section>
@@ -43,7 +61,7 @@ include "header.php";
                  onvergetelijke reiservaring! 
                </h2>
                
-                 <button class="knop">Nu boeken</button>
+               <a href="trending.php" class="link"><button class="home-trending-button">Trending Bestemmingen</button></a>
                  <img src="assets/img/vliegtuig.png" id="logo4">
         </section>
         <section>
@@ -51,7 +69,6 @@ include "header.php";
                 <h2> Laat een review achter:</h2>
                 <input type="text" id="review" name="review" placeholder="  Typen..." />
                 <input type="submit" value="versturen" class="verstuur-knop" />
-    
             </div>
             <div class="top-review-box">
     <div class="top-reviews">
