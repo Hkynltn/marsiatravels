@@ -39,27 +39,36 @@ include "header.php";
 
         <section>
             <h1 class="welkom">Welkom bij Marsia Travels!</h1>
+            <div>
             <h2 class="beschrijving">Ben je er klaar voor? Een échte beleving? Die écht lekkere knapperige pizza uit Italië.
                  Een écht avontuurlijke uitdaging. Die échte rust! Er is niets mis met pizza Hawaii op de bank.
                  Maar soms is het lekker er écht even helemaal tussenuit te gaan! En daarvoor hebben wij nu
                  de beste deals. Een échte ervaring, voor de beste prijs. 
+            </h2>
+            <h2 class="beschrijving">
                  Bij Marsia Travels begrijpen we dat reizen meer is dan alleen van A naar B gaan. Het gaat om
                  het creëren van onvergetelijke herinneringen, het ontdekken van nieuwe culturen en het
                  beleven van avonturen die je voor altijd bij zullen blijven.
-                
+            </h2>
+            <h2 class="beschrijving">
                  Of je nu op zoek bent naar een ontspannende strandvakantie, een avontuurlijke trektocht
                  door de jungle, of een culturele verkenningstocht door historische steden, wij hebben de
                  perfecte reis voor jou.
-                
+            </h2>
+            <h2 class="beschrijving">
                  Onze ervaren reisadviseurs staan ​​klaar om je te helpen bij het plannen van jouw droomreis.
                  Met onze uitgebreide kennis van bestemmingen over de hele wereld en ons streven naar
                  klanttevredenheid, zorgen we ervoor dat jouw reiservaring soepel verloopt van begin tot
                  eind.
+            </h2>
+            <h2 class="beschrijving">
                  Dus waar wacht je nog op? Grab the deal & make it real! ✈️🌎
-
+            </h2>
+            <h2 class="beschrijving">
                  Boek vandaag nog jouw volgende avontuur met Marsia Travels en maak je klaar voor een
                  onvergetelijke reiservaring! 
                </h2>
+            </div>
                
                <a href="trending.php" class="link"><button class="home-trending-button">Trending Bestemmingen</button></a>
                  <img src="assets/img/vliegtuig.png" id="logo4">

@@ -34,25 +34,26 @@ include "header.php";
         </div>
     </section>
     <section>
-    <h1>Trending Bestemmingen!</h1>
+    <h1 class="welkom-trending">Trending Bestemmingen!</h1>
     <div class="container">
         <div class="bestemming">
             <img src="assets/img/parijs.png" alt="Parijs">
-            <a href="#" class="trending-button">Boek vlucht naar Parijs</a>
+            <a href="#" class="trending-button"><h1>Boek vlucht naar Parijs</h1></a>
         </div>
         <div class="bestemming">
             <img src="assets/img/buenos_aires.png" alt="Buenos Aires">
-            <a href="#" class="trending-button">Boek vlucht naar Buenos Aires</a>
+            <a href="#" class="trending-button"><h1>Boek vlucht naar Buenos Aires</h1></a>
         </div>
         <div class="bestemming">
             <img src="assets/img/teheran.png" alt="Teheran">
-            <a href="#" class="trending-button">Boek vlucht naar Teheran</a>
+            <a href="#" class="trending-button"><h1> Boek vlucht naar Teheran </h1></a>
         </div>
         <div class="bestemming">
             <img src="assets/img/erbil.png" alt="Erbil">
-            <a href="#" class="trending-button">Boek vlucht naar Erbil</a>
+            <a href="#" class="trending-button"><h1>Boek vlucht naar Erbil</h1></a>
         </div>
     </div>
+    <a href="index.php" class="home-link"><button class="home-trending-button">Terug naar start-pagina</button></a>
     </section>
 </body>
 <?php

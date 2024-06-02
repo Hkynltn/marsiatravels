@@ -158,18 +158,33 @@ p {
     position: relative;
     left: 80px
 }
-
-
+.home-link{
+    position: relative;
+    top: -100px;
+    margin-bottom: 300px;
+    display:flex;
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+}
 .welkom{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     position: relative;
     top: 90px;
-    display: flex;
-    justify-content: center;
-    display: flex;
-    align-self: center;
+    left: -525px;
     padding: 50px;
+    margin-bottom: 50px;
+    
+}
+.welkom-trending{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 90px;
+    left: -525px;
+    padding: 50px;
+    margin-bottom: 150px;
     
 }
 
@@ -185,6 +200,7 @@ p {
     position: relative;
     top: 120px;
     left: 50px;
+    margin-bottom: 20px;
 }
 
 .home-trending-button{
@@ -198,6 +214,12 @@ p {
     top: 200px;
     left: 450px;
     font-size: 50px;
+}
+.trending-button{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #CBAB38;
 }
 
 #logo4{
@@ -378,7 +400,7 @@ h1 {
 
 .bestemming {
     width: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     position: relative;
 }
 
