@@ -188,7 +188,7 @@ p {
     
 }
 
-
+    
 .beschrijving {
     display: flex;
     align-self: center;
@@ -202,7 +202,18 @@ p {
     left: 50px;
     margin-bottom: 20px;
 }
-
+.home-login-button{ 
+    font-family: Arial, sans-serif;
+    background-color: #498DC8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 200px;
+    left: 450px;
+    font-size: 50px;
+}
 .home-trending-button{
     font-family: Arial, sans-serif;
     background-color: #498DC8;
@@ -422,8 +433,83 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
+}s
 
 .trend-knop:hover {
     background-color: #0056b3;
 }
+
+
+  
+  
+  .signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .login-box {
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  h4 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+  input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #498DC8;
+    color: white;
+    font-size: 18px;
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .para-2 {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    margin-top: -10px;
+    position: relative;
+    left: 678px;
+    top: -140px;
+
+  }
+  .para-2 a {
+    color:#498DC8;
+  }
