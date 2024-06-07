@@ -10,7 +10,9 @@
 <body>
     <header>
         <section id="logo-box">
-            <img src="assets/img/logoMarsiaTravels.png" id="logo">
+        <a href="index.php">
+        <img src="assets/img/logoMarsiaTravels.png" id="logo">
+            </a>
             <h1>Marsia Travels</h1>
         </section>
         <div class="search-container">
