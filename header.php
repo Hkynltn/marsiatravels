@@ -13,6 +13,10 @@
             <img src="assets/img/logoMarsiaTravels.png" id="logo">
             <h1>Marsia Travels</h1>
         </section>
+        <div class="search-container">
+        <input type="text" placeholder="Zoeken..." class="search-input">
+        <button class="search-button">Zoek</button>
+    </div>
         <section>
             <a href="login.php" class="login-button">
                 <img src="assets/img/login.png" alt="Login Button">
