@@ -85,10 +85,10 @@ header{
     top: 0px;
     width:fit-content;
 }
-.search-button {
+.search-button-inleiding {
     position: relative;
     left: 40px;
-    width: 120px;
+    min-width: 100px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: none;
@@ -161,6 +161,7 @@ p {
 .home-link{
     position: relative;
     top: -100px;
+    left: 30px;
     margin-bottom: 300px;
     display:flex;
     align-self: center;
@@ -392,7 +393,22 @@ footer{
     left: 700px;
     top: 20px;
 }
-
+.cart-button {
+    border: none;
+    background: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    left: 590px;
+    top: 20px;
+}
+.cart-button img{
+    display: block;
+    max-width: 23%;
+    height: auto;
+    position: relative;
+    left: -400px;
+}
 .login-button img {
     display: block;
     max-width: 30%;
@@ -440,13 +456,13 @@ h1 {
 .trend-knop:hover {
     background-color: #0056b3;
 }
-
-
-  
-  
-  .signup-box {
+.signup-link{
+    position: relative;
+    left: 670px;
+}
+.signup-box {
     width: 360px;
-    height: 620px;
+    height: 480px;
     margin: auto;
     background-color: white;
     border-radius: 3px;
@@ -454,7 +470,7 @@ h1 {
   
   .login-box {
     width: 360px;
-    height: 280px;
+    height: 260px;
     margin: auto;
     border-radius: 3px;
     background-color: white;
@@ -489,6 +505,15 @@ h1 {
     outline: none;
   }
   input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #498DC8;
+    color: white;
+    font-size: 18px;
+  }
+  input[type="submit"] {
     width: 320px;
     height: 35px;
     margin-top: 20px;

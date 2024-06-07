@@ -22,6 +22,11 @@
                 <img src="assets/img/login.png" alt="Login Button">
             </a>
         </section>
+        <section>
+            <a href="cart.php" class="cart-button">
+                <img src="assets/img/cart.png" alt="Cart">
+            </a>
+        </section>
     </header>
 </body>
 </html>

@@ -29,7 +29,7 @@ include "header.php";
                 <p class="best1"></p>
                 <p class="best2"></p>
                 <p class="best3"></p>
-                <button type="submit" class="search-button">Zoek Vluchten</button>
+                <button type="submit" class="search-button-inleiding">Zoek Vluchten</button>
 
             </form>
         </div>
