@@ -1,4 +1,5 @@
 <?php
+include "signup-script.php";
 include "header.php";
     ?>
 <body>
@@ -37,14 +38,13 @@ include "header.php";
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-  </head>
 
   
     <div class="signup-box">
       <h1>Maak account aan</h1>
-      <form>
+      <form action="signup-script.php" method="POST">
         <label>Voornaam</label>
-        <input type="text" placeholder="" />
+        <input type="text" id="voornaam" name="voornaam" placeholder="" required/>
         <label>Achternaam</label>
         <input type="text" placeholder="" />
         <label>Email</label>
@@ -53,7 +53,7 @@ include "header.php";
         <input type="password" placeholder="" />
         <label>Bevestig Wachtwoord</label>
         <input type="password" placeholder="" />
-        <input type="button" value="Maak account aan" />
+        <input type="submit" value="signup" />
       </form>
     </div>
     <p class="signup-link">

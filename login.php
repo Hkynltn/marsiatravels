@@ -1,4 +1,6 @@
 <?php
+include "login-script.php";
+include "connection.php";
 include "header.php";
     ?>
 <!DOCTYPE html>
@@ -9,7 +11,7 @@ include "header.php";
   <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
-    />?
+    />
   <link rel="stylesheet" href="styles/login.css">
   <title>Login</title>
 </head>
