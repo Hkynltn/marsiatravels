@@ -13,12 +13,14 @@ session_start();
 </head>
 <body>
 <header>
+
     <section id="logo-box">
         <a href="index.php">
             <img src="assets/img/logoMarsiaTravels.png" id="logo">
         </a>
+        
         <h1>Marsia Travels</h1>
-    </section>
+    </section><a href=""></a>
     <div class="search-container">
         <input type="text" placeholder="Zoeken naar bestemmingen..." class="search-input" id="search-input">
         <button class="search-button" id="search-button">Zoek</button>

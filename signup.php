@@ -1,4 +1,5 @@
 <?php
+include "signup-script.php";
 include "header.php";
 include('connection.php');
 
@@ -53,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Registratie</title>
 </head>
 <body>
+
 <div class="signup-box">
     <h1>Maak account aan</h1>
     <form method="POST" action="signup.php">
@@ -65,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label>Wachtwoord</label>
         <input type="password" name="wachtwoord" required />
         <label>Bevestig Wachtwoord</label>
+
         <input type="password" name="bevestig_wachtwoord" required />
         <input type="submit" value="Maak account aan" />
     </form>
@@ -76,5 +79,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php include "footer.php"; ?>
 </body>
 </html>
-
 

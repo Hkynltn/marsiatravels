@@ -582,3 +582,95 @@ h1 {
 .search-button:hover {
     background-color: #0056b3;
 }
+
+
+#contact2{
+    height: 30px;
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-veld {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.invoer-sectie {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.verzend-knop {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.verzend-knop:hover {
+    background-color: #4cae4c;
+}
+
+
+.spoedig{
+    position: relative;
+    left: 660px;
+    top: -10px;
+    font-size: 20px;
+}
+
+.terug{
+    position: relative;
+    left: 659px;
+    top: 40px;
+}
+
+.tehran{
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 70px;
+  left: 40px;
+}
+
+.parijs{
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
