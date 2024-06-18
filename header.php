@@ -8,23 +8,26 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marsia Travels</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/search.css"> <!-- Nieuwe CSS -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/search.js"></script> <!-- Nieuwe JavaScript -->
 </head>
 <body>
 <header>
-
     <section id="logo-box">
         <a href="index.php">
             <img src="assets/img/logoMarsiaTravels.png" id="logo">
         </a>
-        
         <h1>Marsia Travels</h1>
-    </section><a href=""></a>
+    </section>
     <div class="search-container">
         <input type="text" placeholder="Zoeken naar bestemmingen..." class="search-input" id="search-input">
         <button class="search-button" id="search-button">Zoek</button>
         <div id="search-results"></div>
+    </div>
+    <div id="contact-us">
+        <a href="contact.php"><img src="assets/img/contact.png" id="contact2"></a>
     </div>
     <section>
         <?php
@@ -41,32 +44,6 @@ session_start();
         </a>
     </section>
 </header>
-<script>
-    $(document).ready(function() {
-        $('#search-button').on('click', function() {
-            var query = $('#search-input').val();
-            $.ajax({
-                url: 'search.php',
-                type: 'GET',
-                data: { query: query },
-                success: function(data) {
-                    var results = JSON.parse(data);
-                    var resultsHtml = '';
-                    if (results.length > 0) {
-                        resultsHtml = '<ul>';
-                        results.forEach(function(result) {
-                            resultsHtml += '<li>' + result + '</li>';
-                        });
-                        resultsHtml += '</ul>';
-                    } else {
-                        resultsHtml = '<p>Geen resultaten gevonden</p>';
-                    }
-                    $('#search-results').html(resultsHtml);
-                }
-            });
-        });
-    });
-</script>
 </body>
 </html>
 

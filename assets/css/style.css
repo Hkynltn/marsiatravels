@@ -293,8 +293,6 @@ p {
     color: #333;
     margin: 0;
 }
-
-
 footer{
     background-color:  #A7CFFB;
     height: 500px;
@@ -329,12 +327,11 @@ footer{
     height: 40px;
     width: 80px;
 }
-.column-footer{
+.column-footer-socials{
     display: flex;
     flex-direction: column;
     position: relative;
-    left: -250px;
-    gap: 20px;
+    left: 150px;
 }
 .row-footer{
     display: flex;
@@ -344,12 +341,35 @@ footer{
     left: 50px;
     width: 100vw;
 }
+.row-footer-payments{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -270px;
+    left: 850px;
+    width: 100vw;
+}
+.column-footer{
+    display: flex;
+    flex-direction: column;
+}
+#contact-us img{
+    position: relative;
+    top: 27px;
+    left: 150px;
+    height: 45px;
+}
 .button-container {
     font-size: 25px;
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: -150px;
+    left: -200px;
 }
 
 .text-button {
@@ -673,4 +693,37 @@ input, textarea {
     position: relative;
     top: 100px;
     left: 50px;
+}
+.search-container {
+    position: relative;
+}
+
+#search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#search-results ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#search-results li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#search-results li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#search-results li a:hover {
+    background: #f0f0f0;
 }

@@ -8,46 +8,40 @@
 </head>
 <body>
 <footer>
-
-<div class="button-container">
-    <div class="button-column">
-        <button class="text-button">Klanten service</button>
-    </div>
-    <div class="button-column">
-    <button class="text-button">Boek nu</button>
-    </div>
-</div>
-<div class="button-container">
-<div class="button-column">
-<a href="contact.php"><img src="assets/img/contact.png" id="contact2"></a>
-
-    </div>
-    <div class="button-column">
-    <button class="text-button">Volg Marsia Travels</button>
-    </div>
-</div>
-<div class="row-footer">
     <div class="row-footer">
-        <img id="apple" src="assets/img/applepay.png" alt="Applepay_Logo">
-        <img id="klarna" src="assets/img/klarna.png" alt="Klarna_Logo">
-        <img id="paypal" src="assets/img/paypal.png" alt="Paypal_Logo">
-        <img id="ideal" src="assets/img/ideal.png" alt="Ideal_Logo">
+        <div class="column-footer">
+            <div class="column-footer-socials">
+                <div class="contact-row">
+                    <img class="contact-instagram" src="assets/img/instagram.png" alt="Instagram_Logo">
+                    <button class="text-button">Instagram</button>
+                </div>
+                <div class="contact-row-facebook">
+                    <img class="contact-facebook" src="assets/img/facebook.png" alt="Facebook_Logo">
+                    <button class="text-button">Facebook</button>
+                </div>
+                <div class="contact-row-twitter">
+                    <img class="contact-twitter" src="assets/img/twitter.png" alt="Twitter_Logo">
+                    <button class="text-button">Twitter</button>
+                </div>
+            </div>
+            <div class="button-container">
+                <div>
+                    <button class="text-button">Klanten service</button>
+                </div>
+                <div>
+                    <button class="text-button">Boek nu</button>
+                </div>
+                <div>
+                    <button class="text-button">Volg Marsia Travels</button>
+                </div>
+            </div>
+            <div class="row-footer-payments">
+                <img id="apple" src="assets/img/applepay.png" alt="Applepay_Logo">
+                <img id="klarna" src="assets/img/klarna.png" alt="Klarna_Logo">
+                <img id="paypal" src="assets/img/paypal.png" alt="Paypal_Logo">
+                <img id="ideal" src="assets/img/ideal.png" alt="Ideal_Logo">
+            </div>
+        </div>
     </div>
-    <div class="column-footer">
-        <div class="contact-row">
-            <img class="contact-instagram" src="assets/img/instagram.png" alt="Instagram_Logo">
-            <button class="text-button">Instagram</button>
-        </div>
-        <div class="contact-row-facebook">
-            <img class="contact-facebook" src="assets/img/facebook.png" alt="Facebook_Logo">
-            <button class="text-button">Facebook</button>
-        </div>
-        <div class="contact-row-twitter">
-            <img class="contact-twitter" src="assets/img/twitter.png" alt="Twitter_Logo">
-            <button class="text-button">Twitter</button>
-        </div>
-    </div>
-</div>
-
 </footer>
 </html>
