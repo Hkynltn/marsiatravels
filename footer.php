@@ -19,7 +19,8 @@
 </div>
 <div class="button-container">
 <div class="button-column">
-        <button class="text-button">Contact</button>
+<a href="contact.php"><img src="assets/img/contact.png" id="contact2"></a>
+
     </div>
     <div class="button-column">
     <button class="text-button">Volg Marsia Travels</button>
@@ -47,5 +48,6 @@
         </div>
     </div>
 </div>
+
 </footer>
 </html>

@@ -21,5 +21,4 @@ catch (PDOException $e)
     echo $e->getMessage();
     die("sorry, Database probleem");
 }''
-
-
+    

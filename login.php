@@ -6,22 +6,13 @@ include "header.php";
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<<<<<<< HEAD
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  <link rel="stylesheet" href="styles/login.css">
-  <title>Login</title>
-=======
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
->>>>>>> 95c271658f0d9ef0b923042dec8364d2157fd2be
+
 </head>
 <body>
 <section class="inleiding">
@@ -50,7 +41,8 @@ include "header.php";
             <p class="best1"></p>
             <p class="best2"></p>
             <p class="best3"></p>
-            <button type="submit" class="search-button-inleiding">Zoek Vluchten</button>
+            <a href="verzendencontact.php" class="verzend-knop">Verzenden</a>
+
         </form>
     </div>
 </section>
