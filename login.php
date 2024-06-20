@@ -1,18 +1,15 @@
 <?php
-include "login-script.php";
 include "connection.php";
 include "header.php";
 ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
-
 </head>
 <body>
 <section class="inleiding">
@@ -41,14 +38,13 @@ include "header.php";
             <p class="best1"></p>
             <p class="best2"></p>
             <p class="best3"></p>
-            <a href="verzendencontact.php" class="verzend-knop">Verzenden</a>
-
+            <button type="submit" class="search-button-inleiding">Zoek Vluchten</button>
         </form>
     </div>
 </section>
 <div class="login-box">
     <h1>Login</h1>
-    <form action="login_process.php" method="POST">
+    <form action="login-script.php" method="POST">
         <label>Email</label>
         <input type="email" name="email" placeholder="Voer uw email in" required />
         <label>Wachtwoord</label>
@@ -65,4 +61,5 @@ include "header.php";
 include "footer.php";
 ?>
 </html>
+
 
