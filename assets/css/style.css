@@ -727,3 +727,227 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
+
+
+.over-ons{
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+.privacy-policy{
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.content {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+h1, h2 {
+
+    color: #4a86e8;
+
+}
+
+
+h1 {
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+h2 {
+
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+li {
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+a {
+
+    color: #4a86e8;
+
+    text-decoration: none;
+
+}
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+#agreeCheckbox{
+    position: relative;
+    left: -130px;
+    top: 40px;
+}
+
+label{
+    position: relative;;
+    left: 50px;
+}
+
+.submit {
+    position: relative;
+    left: 50px;
+    padding: 10px 20px; /* Voeg wat ruimte toe rondom de tekst */
+    background-color: blue; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 16px; /* Tekstgrootte */
+    cursor: pointer; /* Verander de muisaanwijzer naar een handje */
+    transition: background-color 0.3s ease; /* Soepele overgang voor achtergrondkleur */
+}
+
+.submit:hover {
+    background-color: blue; /* Donkerder groen bij hover */
+}
+
+.submit:focus {
+    outline: none; /* Verwijder de standaard focus-stijl */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Licht schaduweffect bij focus */
+}
+
+
+/* Basisopmaak */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.city-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.city-info div {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.city-info p {
+    margin-bottom: 15px;
+}
+
+.book-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}
+
+
+.tehran{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+.tehran-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+
+}
+.city-info{
+    position: relative;
+    top: 40px;
+}
+
+.parijs{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+.parijs-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+}
+
+.erbil-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+}
+
+.buenos-aires-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+}
