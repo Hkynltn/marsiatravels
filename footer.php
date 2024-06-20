@@ -26,13 +26,19 @@
             </div>
             <div class="button-container">
                 <div>
-                    <button class="text-button">Klanten service</button>
+                    <a href="contact.php"><button class="text-button">Klanten service</button></a>
                 </div>
                 <div>
                     <button class="text-button">Boek nu</button>
                 </div>
                 <div>
                     <button class="text-button">Volg Marsia Travels</button>
+                </div>
+                <div>
+                   <a href="index.php"> <button class="over-ons">over ons</button></a>
+                </div>
+                <div>
+                   <a href="privacy.php"><button class="privacy-policy">Privacy policy</button></a>
                 </div>
             </div>
             <div class="row-footer-payments">
