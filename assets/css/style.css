@@ -93,7 +93,7 @@ header{
     border-bottom-right-radius: 10px;
     box-shadow: none;
 }
-#search-bar form{
+#search-bar2 form{
     display: flex;
     align-self: center;
     justify-self: center;
@@ -508,6 +508,7 @@ h1 {
   form {
     width: 300px;
     margin-left: 20px;
+    position: relative;
   }
   
   form label {
@@ -950,4 +951,53 @@ body {
     top: -30px;
     font-size: 13px;
     left: -5px;
+}
+
+.form{
+    position: relative;
+    left: 200px;
+}
+
+
+.boeking-container{
+    width: 300px;
+    position: relative;
+    top: 30px;
+    left: 580px
+    
+}
+
+.container-verwerking {
+    position: relative;
+    top: 85px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+
+.wensen-u{
+    position: relative;
+    left: 250px;
+    top: -0;
+}
+
+.wensen-u2{
+    position: relative;
+    left: 250px;
+    top: -0px;
 }

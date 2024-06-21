@@ -4,7 +4,7 @@ include "header.php";
     <body>
 
     <section class="inleiding">
-        <div id="search-bar">
+        <div id="search-bar2">
             <form method="POST" action="zoek_vluchten.php">
                 <p>Vertrek:</p>
                 <select name="vertrek_land">
