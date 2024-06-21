@@ -14,10 +14,11 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
+    echo 'Connection successful';
 } catch (\PDOException $e) {
-    echo 'Sorry, er is een databaseprobleem opgetreden.';
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    echo 'Connection failed: ' . $e->getMessage();
 }
 ?>
+
 
 
