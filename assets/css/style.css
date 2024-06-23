@@ -728,7 +728,7 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
-<<<<<<< HEAD
+
 .contact-veld {
     width: 50%;
     margin: 50px auto;
@@ -801,7 +801,7 @@ button {
 input[type="text"] {
     padding: 5px;
     margin-right: 5px;
-=======
+
 
 
 .over-ons{
@@ -811,7 +811,7 @@ input[type="text"] {
     font-size: inherit;
     cursor: pointer;
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 
@@ -1025,7 +1025,7 @@ body {
     top: -30px;
     font-size: 13px;
     left: -5px;
-<<<<<<< HEAD
+
 }
 
 .form{
@@ -1075,7 +1075,7 @@ body {
     position: relative;
     left: 250px;
     top: -0px;
-=======
->>>>>>> 71e87c20267ff2144033d38def138bbdbbba2b7f
->>>>>>> 9194930cdc19cfc67dce9364ebeb3545575c1381
+
+}
+
 }
