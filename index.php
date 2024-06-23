@@ -1,10 +1,10 @@
-<?php
-include "header.php";
-    ?>
+
     <body>
     <?php
+    include "header.php";
     include "booking-form.php";
     ?>
+
         <section>
             <h1 class="welkom">Welkom bij Marsia Travels!</h1>
             <div>

@@ -79,6 +79,49 @@ header{
     display: flex;
     align-self: center;
 }
+#search-bar {
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    height: 100px;
+    width: 1200px;
+}
+#search-bar form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 200px;
+    position: relative;
+    top: -50px;
+    left: -50px;
+    gap: 20px;
+}
+#search-bar select,
+#search-bar input[type="datetime-local"],
+#search-bar button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+    font-size: 16px;
+}
+
+#search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-bar button:hover {
+    background-color: #45a049;
+}
+
 #search-bar p{
     display: flex;
     align-self: center;
@@ -93,7 +136,7 @@ header{
     border-bottom-right-radius: 10px;
     box-shadow: none;
 }
-#search-bar form{
+#search-bar2 form{
     display: flex;
     align-self: center;
     justify-self: center;
@@ -572,6 +615,7 @@ h1 {
   form {
     width: 300px;
     margin-left: 20px;
+    position: relative;
   }
   
   form label {
@@ -884,3 +928,251 @@ over-ons {
     margin: 0;
 }
 
+.content {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 2rem;
+
+    background-color: #fff;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+h1, h2 {
+
+    color: #4a86e8;
+
+}
+
+
+h1 {
+
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+h2 {
+
+    font-size: 1.5rem;
+
+    margin-top: 2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+
+ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+li {
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+a {
+
+    color: #4a86e8;
+
+    text-decoration: none;
+
+}
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+#agreeCheckbox{
+    position: relative;
+    left: -130px;
+    top: 40px;
+}
+
+label{
+    position: relative;;
+    left: 50px;
+}
+
+.submit {
+    position: relative;
+    left: 50px;
+    padding: 10px 20px; /* Voeg wat ruimte toe rondom de tekst */
+    background-color: blue; /* Groene achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 16px; /* Tekstgrootte */
+    cursor: pointer; /* Verander de muisaanwijzer naar een handje */
+    transition: background-color 0.3s ease; /* Soepele overgang voor achtergrondkleur */
+}
+
+.submit:hover {
+    background-color: blue; /* Donkerder groen bij hover */
+}
+
+.submit:focus {
+    outline: none; /* Verwijder de standaard focus-stijl */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Licht schaduweffect bij focus */
+}
+
+
+/* Basisopmaak */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.city-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.city-info div {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.city-info p {
+    margin-bottom: 15px;
+}
+
+.book-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}
+
+
+.tehran{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+.tehran-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+
+}
+.city-info{
+    position: relative;
+    top: 40px;
+}
+
+.parijs{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+.parijs-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+}
+
+.erbil-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+}
+
+.buenos-aires-info{
+    position: relative;
+    top: -30px;
+    font-size: 13px;
+    left: -5px;
+<<<<<<< HEAD
+}
+
+.form{
+    position: relative;
+    left: 200px;
+}
+
+
+.boeking-container{
+    width: 300px;
+    position: relative;
+    top: 30px;
+    left: 580px
+    
+}
+
+.container-verwerking {
+    position: relative;
+    top: 85px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+
+.wensen-u{
+    position: relative;
+    left: 250px;
+    top: -0;
+}
+
+.wensen-u2 {
+    position: relative;
+    left: 250px;
+    top: -0px;
+}
