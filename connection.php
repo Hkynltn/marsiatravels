@@ -1,23 +1,14 @@
 <?php
 $host = 'localhost';
-$db   = 'marsia_travels';
-$user = 'root';
-$pass = 'Little1314107';
-$charset = 'utf8mb4';
-
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-$options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
-];
+$dbname = 'marsia_travels';
+$username = 'root';
+$password = 'Little1314107';
 
 try {
-    $pdo = new PDO($dsn, $user, $pass, $options);
-} catch (\PDOException $e) {
-    echo 'Sorry, er is een databaseprobleem opgetreden.';
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+    exit();
 }
 ?>
-
-

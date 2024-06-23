@@ -13,15 +13,16 @@
             <div class="column-footer-socials">
                 <div class="contact-row">
                     <img class="contact-instagram" src="assets/img/instagram.png" alt="Instagram_Logo">
-                    <button class="text-button">Instagram</button>
+                    <a href="contact.php"><button class="text-button-socials">Instagram</button></a>
                 </div>
                 <div class="contact-row-facebook">
                     <img class="contact-facebook" src="assets/img/facebook.png" alt="Facebook_Logo">
-                    <button class="text-button">Facebook</button>
+                    <a href="contact.php"><button class="text-button-facebook">Facebook</button></a>
+
                 </div>
                 <div class="contact-row-twitter">
                     <img class="contact-twitter" src="assets/img/twitter.png" alt="Twitter_Logo">
-                    <button class="text-button">Twitter</button>
+                    <a href="contact.php"><button class="text-button-socials">Twitter</button></a>
                 </div>
             </div>
             <div class="button-container">
@@ -35,10 +36,10 @@
                     <button class="text-button">Volg Marsia Travels</button>
                 </div>
                 <div>
-                   <a href="index.php"> <button class="over-ons">over ons</button></a>
+                   <a href="index.php"> <button class="text-button">over ons</button></a>
                 </div>
                 <div>
-                   <a href="privacy.php"><button class="privacy-policy">Privacy policy</button></a>
+                   <a href="privacy.php"><button class="text-button">Privacy policy</button></a>
                 </div>
             </div>
             <div class="row-footer-payments">

@@ -36,7 +36,7 @@
                 </a>
             </div>
         </div>
-        <a href="index.php" class="home-link"><button class="home-trending-button">Terug naar start-pagina</button></a>
+        <a href="index.php" class="home-link"><button class="trending-home-button">Terug naar start-pagina</button></a>
     </section>
 
 <?php include "footer.php"; ?>

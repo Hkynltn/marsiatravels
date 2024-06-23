@@ -49,13 +49,10 @@ $bestemmingen = fetchBestemmingen($conn);
 </head>
 <body>
 <?php include "header.php"; ?>
-<section class="inleiding">
-    <?php include "inleiding.php"; ?>
-</section>
 <main>
-    <section>
+    <section class="admin-panel">
         <h2>Bestemmingen Beheren</h2>
-        <form method="POST" action="adminpanel.php">
+        <form method="POST" action="adminpanel.php" class="admin-form">
             <input type="text" name="naam" placeholder="Nieuwe bestemming toevoegen" required>
             <button type="submit" name="add">Toevoegen</button>
         </form>
@@ -73,12 +70,12 @@ $bestemmingen = fetchBestemmingen($conn);
                     <td><?php echo htmlspecialchars($bestemming['id']); ?></td>
                     <td><?php echo htmlspecialchars($bestemming['naam']); ?></td>
                     <td>
-                        <form method="POST" action="adminpanel.php" style="display:inline;">
+                        <form method="POST" action="adminpanel.php" class="inline-form">
                             <input type="hidden" name="id" value="<?php echo $bestemming['id']; ?>">
                             <input type="text" name="naam" value="<?php echo htmlspecialchars($bestemming['naam']); ?>" required>
                             <button type="submit" name="edit">Bewerken</button>
                         </form>
-                        <form method="POST" action="adminpanel.php" style="display:inline;">
+                        <form method="POST" action="adminpanel.php" class="inline-form">
                             <input type="hidden" name="id" value="<?php echo $bestemming['id']; ?>">
                             <button type="submit" name="delete">Verwijderen</button>
                         </form>
@@ -92,3 +89,4 @@ $bestemmingen = fetchBestemmingen($conn);
 <?php include "footer.php"; ?>
 </body>
 </html>
+
