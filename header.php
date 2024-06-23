@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -8,10 +10,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marsia Travels</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/search.css"> <!-- Nieuwe CSS -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/search.js"></script> <!-- Nieuwe JavaScript -->
+    <script src="assets/js/search.js"></script>
 </head>
 <body>
 <header>
@@ -29,12 +30,14 @@ session_start();
     <div id="contact-us">
         <a href="contact.php"><img src="assets/img/contact.png" id="contact2"></a>
     </div>
-    <section>
+    <section id="welkom-gebruiker">
         <?php
-        if (isset($_SESSION['voornaam'])) {
-            echo "<p>Hallo, " . htmlspecialchars($_SESSION['voornaam']) . "</p>";
+        if (isset($_SESSION['voornaam']) && isset($_SESSION['gebruiker_id'])) {
+            echo "<h2>Hallo, " . $_SESSION['voornaam'] . "</h2>";
+            echo '<a href="account.php" class="login-button"><img src="assets/img/login.png" alt="Account"></a>';
+            echo '<a href="logout.php" class="logout-button"><h3> Logout </h3></a>';
         } else {
-            echo "<a href='login.php' class='login-button'><img src='assets/img/login.png' alt='Login Button'></a>";
+            echo '<a href="login.php" class="login-button"><img src="assets/img/login.png" alt="Login Button"></a>';
         }
         ?>
     </section>
@@ -46,4 +49,6 @@ session_start();
 </header>
 </body>
 </html>
+
+
 

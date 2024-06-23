@@ -1,41 +1,9 @@
-<?php
-include "header.php";
-    ?>
+
     <body>
-
-    <section class="inleiding">
-        <div id="search-bar2">
-            <form method="POST" action="zoek_vluchten.php">
-                <p>Vertrek:</p>
-                <select name="vertrek_land">
-                    <option value="Amsterdam">Amsterdam</option>
-                    <option value="Parijs">Parijs</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Tehran">Tehran</option>
-                    <option value="Erbil">Erbil</option>
-                </select>
-                <p>Aankomst:</p>
-                <select name="aankomst_land">
-                    <option value="Parijs">Parijs</option>
-                    <option value="Buenos Aires">Buenos Aires</option>
-                    <option value="Tehran">Tehran</option>
-                    <option value="Erbil">Erbil</option>
-                    <option value="Cairo">Cairo</option>
-                </select>
-                <p>Vertrek datum:</p>
-                <input type="datetime-local" name="vertrek_tijd">
-                <p>Aankomst datum:</p>
-                <input type="datetime-local" name="aankomst_tijd">
-                <p class="best1"></p>
-                <p class="best2"></p>
-                <p class="best3"></p>
-                <button type="submit" class="search-button-inleiding">Zoek Vluchten</button>
-
-            </form>
-        </div>
-    </section>
-
-
+    <?php
+    include "header.php";
+    include "booking-form.php";
+    ?>
 
         <section>
             <h1 class="welkom">Welkom bij Marsia Travels!</h1>
@@ -43,7 +11,7 @@ include "header.php";
             <h2 class="beschrijving">Ben je er klaar voor? Een échte beleving? Die écht lekkere knapperige pizza uit Italië.
                  Een écht avontuurlijke uitdaging. Die échte rust! Er is niets mis met pizza Hawaii op de bank.
                  Maar soms is het lekker er écht even helemaal tussenuit te gaan! En daarvoor hebben wij nu
-                 de beste deals. Een échte ervaring, voor de beste prijs. 
+                 de beste deals. Een échte ervaring, voor de beste prijs.
             </h2>
             <h2 class="beschrijving">
                  Bij Marsia Travels begrijpen we dat reizen meer is dan alleen van A naar B gaan. Het gaat om
@@ -66,10 +34,10 @@ include "header.php";
             </h2>
             <h2 class="beschrijving">
                  Boek vandaag nog jouw volgende avontuur met Marsia Travels en maak je klaar voor een
-                 onvergetelijke reiservaring! 
+                 onvergetelijke reiservaring!
                </h2>
             </div>
-               
+
                <a href="trending.php" class="link"><button class="home-trending-button">Trending Bestemmingen</button></a>
                  <img src="assets/img/vliegtuig.png" id="logo4">
         </section>
@@ -85,7 +53,7 @@ include "header.php";
     </div>
     <div class="top-reviews">
         <h3>"Van boeken tot terugkomen, alles was top! Geen stress, alleen maar plezier. Dank je wel, Marsia Travels!" - Sarah K.</h3>
-    </div>  
+    </div>
     <div class="top-reviews">
         <h3>"Wat een top service! Alles was perfect geregeld. We gaan zeker nog eens met Marsia Travels op reis!" - Michael T.</h3>
     </div>

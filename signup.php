@@ -1,42 +1,30 @@
 <?php
-include('connection.php');
-include "header.php";
-
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-    exit();
-}
+include_once 'connection.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['gebruikersnaam'];
-    $email = $_POST['email'];
-    $password = $_POST['wachtwoord'];
+    $voornaam = htmlspecialchars($_POST['voornaam'] ?? '');
+    $achternaam = htmlspecialchars($_POST['achternaam'] ?? '');
+    $email = htmlspecialchars($_POST['email'] ?? '');
+    $wachtwoord = htmlspecialchars($_POST['wachtwoord'] ?? '');
 
-    $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
-    $stmt->bindParam(':username', $username);
-    $stmt->execute();
-    $existing_user = $stmt->fetch(PDO::FETCH_ASSOC);
+    $hashed_password = password_hash($wachtwoord, PASSWORD_DEFAULT);
 
-    if ($existing_user) {
-        $error_message = "Username already in use. Please choose another one.";
-    } else {
-        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-
-        $sql = "INSERT INTO users (username, email, password_hash) VALUES (:username, :email, :passwordHash)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':username', $username);
+    try {
+        $stmt = $conn->prepare("INSERT INTO gebruikers (voornaam, achternaam, email, wachtwoord) VALUES (:voornaam, :achternaam, :email, :wachtwoord)");
+        $stmt->bindParam(':voornaam', $voornaam);
+        $stmt->bindParam(':achternaam', $achternaam);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':passwordHash', $passwordHash);
+        $stmt->bindParam(':wachtwoord', $hashed_password);
         $stmt->execute();
 
-        header("Location: login.php");
-        exit();
+        echo "Account successfully created!";
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
     }
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -47,24 +35,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Signup</title>
 </head>
 <body>
+<?php
+include "header.php";
+include "booking-form.php";
+
+?>
 <div class="signup-box">
     <h1>Signup</h1>
-    <form action="signup_process.php" method="POST">
-        <label>Naam</label>
-        <input type="text" name="name" placeholder="Voer uw naam in" required />
+    <form action="signup.php" method="POST">
+        <label>Voornaam</label>
+        <input type="text" name="voornaam" placeholder="Voer uw voornaam in" required />
+
+        <label>Achternaam</label>
+        <input type="text" name="achternaam" placeholder="Voer uw achternaam in" required />
+
         <label>Email</label>
         <input type="email" name="email" placeholder="Voer uw email in" required />
+
         <label>Wachtwoord</label>
-        <input type="password" name="password" placeholder="Voer uw wachtwoord in" required />
+        <input type="password" name="wachtwoord" placeholder="Voer uw wachtwoord in" required />
+
         <input type="submit" value="Signup"/>
     </form>
 </div>
-<p class="login-link">
-    Hebt u al een account? <a href="login.php">Log hier in</a>
-</p>
-<a href="index.php" class="home-link"><button class="home-login-button">Terug naar start-pagina</button></a>
+
+<?php include "footer.php"; ?>
+
 </body>
-<?php
-include "footer.php";
-?>
 </html>
+
+
+

@@ -79,6 +79,49 @@ header{
     display: flex;
     align-self: center;
 }
+#search-bar {
+    background-color: rgba(249, 249, 249, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    height: 100px;
+    width: 1200px;
+}
+#search-bar form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1200px;
+    height: 200px;
+    position: relative;
+    top: -50px;
+    left: -50px;
+    gap: 20px;
+}
+#search-bar select,
+#search-bar input[type="datetime-local"],
+#search-bar button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+    font-size: 16px;
+}
+
+#search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-bar button:hover {
+    background-color: #45a049;
+}
+
 #search-bar p{
     display: flex;
     align-self: center;
@@ -160,13 +203,15 @@ p {
 }
 .home-link{
     position: relative;
-    top: -100px;
-    left: 30px;
+    top: 200px;
+    left: 450px;
     margin-bottom: 300px;
     display:flex;
     align-self: center;
     justify-self: center;
     text-decoration: none;
+    max-height: 80px;
+    max-width: 800px;
 }
 .welkom{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -203,17 +248,39 @@ p {
     left: 50px;
     margin-bottom: 20px;
 }
-.home-login-button{ 
+.login-button{
     font-family: Arial, sans-serif;
-    background-color: #498DC8;
-    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     position: relative;
-    top: 200px;
-    left: 450px;
     font-size: 50px;
+}
+.logout-button{
+margin-bottom: 50px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    left: -50px;
+    top: -10px;
+}
+#welkom-gebruiker{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 170px;
+    top: 55px;
+}
+#welkom-gebruiker h2{
+    position: relative;
+    left: 30px;
+    top: -20px;
+    width: 100px;
+}
+#welkom-gebruiker a{
+    gap: 10px;
+    max-width: 160px;
+    max-height: 140px;
 }
 .home-trending-button{
     font-family: Arial, sans-serif;
@@ -227,6 +294,18 @@ p {
     left: 450px;
     font-size: 50px;
 }
+.trending-home-button{
+    font-family: Arial, sans-serif;
+    background-color: #498DC8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: -70px;
+    left: 50px;
+    font-size: 50px;
+}
 .trending-button{
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -238,8 +317,7 @@ p {
     width: 100vw;
     height: 700px;
     position: relative;
-    top:  300px; 
-    left: 0 px;
+    top:  300px;
 }
 .review-box{
     display: flex;
@@ -345,7 +423,7 @@ footer{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -270px;
+    top: -370px;
     left: 850px;
     width: 100vw;
 }
@@ -368,16 +446,33 @@ footer{
     flex-direction: column;
     gap: 20px;
     position: relative;
-    top: -150px;
+    top: -200px;
     left: -200px;
 }
 
 .text-button {
     background: none;
     border: none;
-    color: inherit; 
-    font-size: inherit;
-    cursor: pointer; 
+    position: relative;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+.text-button-socials {
+    background: none;
+    border: none;
+    position: relative;
+    font: inherit;
+    top: 13px;
+    padding: 0;
+    margin: 0;
+}
+.text-button-facebook {
+    background: none;
+    border: none;
+    position: relative;
+    font: inherit;
+    top: 30px;
     padding: 0;
     margin: 0;
 }
@@ -404,14 +499,34 @@ footer{
     position: relative;
     left: -15px;
 }
+.home-login-button {
+    border-radius: 5px;
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: #498DC8;
+    color: white;
+    font-size: 32px;
+    position: relative;
+    top: -30px;
+    left: 70px;
+}
 .login-button {
     border: none;
     background: none;
     padding: 0;
     display: inline-block;
     position: relative;
-    left: 700px;
-    top: 20px;
+    width: 200px;
+    max-height: 200px;
+    top: -30px;
+    left: 210px;
+}
+.login-button img {
+    display: block;
+    max-width: 30%;
+    height: auto;
 }
 .cart-button {
     border: none;
@@ -419,22 +534,14 @@ footer{
     padding: 0;
     display: inline-block;
     position: relative;
-    left: 590px;
     top: 20px;
+    left: 270px;
 }
 .cart-button img{
     display: block;
     max-width: 23%;
     height: auto;
     position: relative;
-    left: -400px;
-}
-.login-button img {
-    display: block;
-    max-width: 30%;
-    height: auto;
-    position: relative;
-    left: -400px;
 }
 h1 {
     text-align: center;
@@ -728,7 +835,10 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
 .contact-veld {
     width: 50%;
     margin: 50px auto;
@@ -801,10 +911,15 @@ button {
 input[type="text"] {
     padding: 5px;
     margin-right: 5px;
+<<<<<<< HEAD
 
 
 
 .over-ons{
+=======
+}
+over-ons {
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
     background: none;
     border: none;
     color: inherit;
@@ -814,8 +929,7 @@ input[type="text"] {
     margin: 0; 
 }
 
-
-.privacy-policy{
+.privacy-policy {
     background: none;
     border: none;
     color: inherit;
@@ -824,9 +938,6 @@ input[type="text"] {
     padding: 0;
     margin: 0;
 }
-
-
-
 
 .content {
 
@@ -1071,11 +1182,14 @@ body {
     top: -0;
 }
 
-.wensen-u2{
+.wensen-u2 {
     position: relative;
     left: 250px;
     top: -0px;
+<<<<<<< HEAD
 
 }
 
+=======
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
 }

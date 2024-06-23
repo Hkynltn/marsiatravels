@@ -1,7 +1,34 @@
 <?php
 include "connection.php";
-include "header.php";
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $stmt = $conn->prepare("SELECT * FROM gebruikers WHERE email = :email");
+    $stmt->bindParam(':email', $email);
+    $stmt->execute();
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['wachtwoord'])) {
+        $_SESSION['email'] = $email;
+        $_SESSION['voornaam'] = $user['voornaam'];
+        $_SESSION['gebruiker_id'] = $user['gebruiker_id'];
+
+        var_dump($_SESSION);
+
+        header("Location: account.php");
+        exit();
+    } else {
+        $_SESSION['error'] = "Ongeldige email of wachtwoord";
+        header("Location: login.php");
+        exit();
+    }
+}
 ?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -12,39 +39,18 @@ include "header.php";
     <title>Login</title>
 </head>
 <body>
-<section class="inleiding">
-    <div id="search-bar">
-        <form method="POST" action="zoek_vluchten.php">
-            <p>Vertrek:</p>
-            <select name="vertrek_land">
-                <option value="Amsterdam">Amsterdam</option>
-                <option value="Parijs">Parijs</option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Tehran">Tehran</option>
-                <option value="Erbil">Erbil</option>
-            </select>
-            <p>Aankomst:</p>
-            <select name="aankomst_land">
-                <option value="Parijs">Parijs</option>
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Tehran">Tehran</option>
-                <option value="Erbil">Erbil</option>
-                <option value="Cairo">Cairo</option>
-            </select>
-            <p>Vertrek datum:</p>
-            <input type="datetime-local" name="vertrek_tijd">
-            <p>Aankomst datum:</p>
-            <input type="datetime-local" name="aankomst_tijd">
-            <p class="best1"></p>
-            <p class="best2"></p>
-            <p class="best3"></p>
-            <button type="submit" class="search-button-inleiding">Zoek Vluchten</button>
-        </form>
-    </div>
-</section>
+<?php
+include "header.php";
+include "booking-form.php";
+
+?>
 <div class="login-box">
     <h1>Login</h1>
-    <form action="login-script.php" method="POST">
+    <?php if (isset($_SESSION['error'])): ?>
+        <p class="error-message"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></p>
+    <?php endif; ?>
+
+    <form method="POST">
         <label>Email</label>
         <input type="email" name="email" placeholder="Voer uw email in" required />
         <label>Wachtwoord</label>
@@ -56,10 +62,7 @@ include "header.php";
     Hebt u nog geen account? <a href="signup.php">Maak hier een account aan</a>
 </p>
 <a href="index.php" class="home-link"><button class="home-login-button">Terug naar start-pagina</button></a>
+<?php include "footer.php"; ?>
 </body>
-<?php
-include "footer.php";
-?>
 </html>
-
 
