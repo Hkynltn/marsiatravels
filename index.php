@@ -61,7 +61,7 @@ $reviews = $conn->query($sql);
 <section>
     <div class="review-box">
         <h2>Laat een review achter:</h2>
-        <form method="POST" action="review_handler.php">
+        <form method="POST" action="verzendreview.php">
             <textarea id="review" name="commentaar" placeholder="Typen..."></textarea>
             <div class="rating">
                 <span class="star" data-rating="1">★</span>

@@ -7,36 +7,24 @@ if (!isset($_SESSION['is_admin']) || !$_SESSION['is_admin']) {
 
 include "connection.php";
 
-function fetchBestemmingen($conn) {
-    $sql = "SELECT * FROM bestemmingen";
-    return $conn->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-}
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $naam = $_POST['naam'];
     if (isset($_POST['add'])) {
-        $naam = $_POST['naam'];
-        $stmt = $conn->prepare("INSERT INTO bestemmingen (naam) VALUES (:naam)");
-        $stmt->execute(['naam' => $naam]);
+        $conn->query("INSERT INTO bestemmingen (naam) VALUES ('$naam')");
     }
-
     if (isset($_POST['edit'])) {
         $id = $_POST['id'];
-        $naam = $_POST['naam'];
-        $stmt = $conn->prepare("UPDATE bestemmingen SET naam = :naam WHERE id = :id");
-        $stmt->execute(['naam' => $naam, 'id' => $id]);
+        $conn->query("UPDATE bestemmingen SET naam = '$naam' WHERE id = $id");
     }
-
     if (isset($_POST['delete'])) {
         $id = $_POST['id'];
-        $stmt = $conn->prepare("DELETE FROM bestemmingen WHERE id = :id");
-        $stmt->execute(['id' => $id]);
+        $conn->query("DELETE FROM bestemmingen WHERE id = $id");
     }
-
     header("Location: adminpanel.php");
     exit();
 }
 
-$bestemmingen = fetchBestemmingen($conn);
+$bestemmingen = $conn->query("SELECT * FROM bestemmingen")->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -67,12 +55,12 @@ $bestemmingen = fetchBestemmingen($conn);
             <tbody>
             <?php foreach ($bestemmingen as $bestemming): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($bestemming['id']); ?></td>
-                    <td><?php echo htmlspecialchars($bestemming['naam']); ?></td>
+                    <td><?php echo $bestemming['id']; ?></td>
+                    <td><?php echo $bestemming['naam']; ?></td>
                     <td>
                         <form method="POST" action="adminpanel.php" class="inline-form">
                             <input type="hidden" name="id" value="<?php echo $bestemming['id']; ?>">
-                            <input type="text" name="naam" value="<?php echo htmlspecialchars($bestemming['naam']); ?>" required>
+                            <input type="text" name="naam" value="<?php echo $bestemming['naam']; ?>" required>
                             <button type="submit" name="edit">Bewerken</button>
                         </form>
                         <form method="POST" action="adminpanel.php" class="inline-form">
@@ -82,7 +70,7 @@ $bestemmingen = fetchBestemmingen($conn);
                     </td>
                 </tr>
             <?php endforeach; ?>
-            </tbody>
+            </body>
         </table>
     </section>
 </main>

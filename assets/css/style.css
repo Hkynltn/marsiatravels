@@ -834,6 +834,10 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
 .contact-veld {
     width: 50%;
     margin: 50px auto;
@@ -906,15 +910,22 @@ button {
 input[type="text"] {
     padding: 5px;
     margin-right: 5px;
+<<<<<<< HEAD
+
+
+
+.over-ons{
+=======
 }
 over-ons {
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
     background: none;
     border: none;
     color: inherit;
     font-size: inherit;
     cursor: pointer;
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 .privacy-policy {
@@ -1124,6 +1135,10 @@ body {
     top: -30px;
     font-size: 13px;
     left: -5px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 05ccb605fa01ba207b4e6c3d3359ade2509a9026
 }
 
 .form{
@@ -1173,6 +1188,7 @@ body {
     position: relative;
     left: 250px;
     top: -0px;
+<<<<<<< HEAD
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -1241,3 +1257,12 @@ body {
     border: 1px solid #ccc;
     background-color: rgba(255, 255, 255, 0.8);
 }
+=======
+<<<<<<< HEAD
+
+}
+
+=======
+>>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
+}
+>>>>>>> 05ccb605fa01ba207b4e6c3d3359ade2509a9026
