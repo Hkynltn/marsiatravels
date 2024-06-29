@@ -290,7 +290,7 @@ margin-bottom: 50px;
     border-radius: 5px;
     position: relative;
     top: 200px;
-    left: 100px;
+    left: 450px;
     font-size: 50px;
 }
 .trending-home-button{
@@ -834,10 +834,6 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
 .contact-veld {
     width: 50%;
     margin: 50px auto;
@@ -910,15 +906,8 @@ button {
 input[type="text"] {
     padding: 5px;
     margin-right: 5px;
-<<<<<<< HEAD
-
-
 
 .over-ons{
-=======
-}
-over-ons {
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
     background: none;
     border: none;
     color: inherit;
@@ -1028,23 +1017,23 @@ label{
 .submit {
     position: relative;
     left: 50px;
-    padding: 10px 20px; /* Voeg wat ruimte toe rondom de tekst */
-    background-color: blue; /* Groene achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    border: none; /* Geen rand */
-    border-radius: 5px; /* Afgeronde hoeken */
-    font-size: 16px; /* Tekstgrootte */
-    cursor: pointer; /* Verander de muisaanwijzer naar een handje */
-    transition: background-color 0.3s ease; /* Soepele overgang voor achtergrondkleur */
+    padding: 10px 20px;
+    background-color: blue; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .submit:hover {
-    background-color: blue; /* Donkerder groen bij hover */
+    background-color: blue; 
 }
 
 .submit:focus {
-    outline: none; /* Verwijder de standaard focus-stijl */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Licht schaduweffect bij focus */
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -1135,10 +1124,6 @@ body {
     top: -30px;
     font-size: 13px;
     left: -5px;
-<<<<<<< HEAD
-=======
-
->>>>>>> 05ccb605fa01ba207b4e6c3d3359ade2509a9026
 }
 
 .form{
@@ -1188,7 +1173,6 @@ body {
     position: relative;
     left: 250px;
     top: -0px;
-<<<<<<< HEAD
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -1257,12 +1241,7 @@ body {
     border: 1px solid #ccc;
     background-color: rgba(255, 255, 255, 0.8);
 }
-=======
-<<<<<<< HEAD
 
 }
 
-=======
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
-}
->>>>>>> 05ccb605fa01ba207b4e6c3d3359ade2509a9026
+

@@ -86,24 +86,7 @@ $reviews = $conn->query($sql);
     </div>
 </section>
 
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    const stars = document.querySelectorAll('.star');
-    stars.forEach(star => {
-        star.addEventListener('click', () => {
-            const rating = star.getAttribute('data-rating');
-            document.getElementById('rating-input').value = rating;
-            stars.forEach(s => {
-                if (s.getAttribute('data-rating') <= rating) {
-                    s.classList.add('selected');
-                } else {
-                    s.classList.remove('selected');
-                }
-            });
-        });
-    });
-});
-</script>
+
 
 </body>
 <?php
