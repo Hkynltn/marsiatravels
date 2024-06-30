@@ -218,7 +218,6 @@ p {
     font-size: 30px;
     position: relative;
     top: 90px;
-    left: -525px;
     padding: 50px;
     margin-bottom: 50px;
     
@@ -324,7 +323,7 @@ margin-bottom: 50px;
     margin-top: 500px;
     margin-bottom: 50px;
     background-color: #A7CFFB;
-    height: 200px;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -835,10 +834,6 @@ input, textarea {
 #search-results li a:hover {
     background: #f0f0f0;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
 .contact-veld {
     width: 50%;
     margin: 50px auto;
@@ -911,15 +906,8 @@ button {
 input[type="text"] {
     padding: 5px;
     margin-right: 5px;
-<<<<<<< HEAD
-
-
 
 .over-ons{
-=======
-}
-over-ons {
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
     background: none;
     border: none;
     color: inherit;
@@ -1029,23 +1017,23 @@ label{
 .submit {
     position: relative;
     left: 50px;
-    padding: 10px 20px; /* Voeg wat ruimte toe rondom de tekst */
-    background-color: blue; /* Groene achtergrondkleur */
-    color: white; /* Witte tekstkleur */
-    border: none; /* Geen rand */
-    border-radius: 5px; /* Afgeronde hoeken */
-    font-size: 16px; /* Tekstgrootte */
-    cursor: pointer; /* Verander de muisaanwijzer naar een handje */
-    transition: background-color 0.3s ease; /* Soepele overgang voor achtergrondkleur */
+    padding: 10px 20px;
+    background-color: blue; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .submit:hover {
-    background-color: blue; /* Donkerder groen bij hover */
+    background-color: blue; 
 }
 
 .submit:focus {
-    outline: none; /* Verwijder de standaard focus-stijl */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Licht schaduweffect bij focus */
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -1136,7 +1124,6 @@ body {
     top: -30px;
     font-size: 13px;
     left: -5px;
-
 }
 
 .form{
@@ -1186,10 +1173,75 @@ body {
     position: relative;
     left: 250px;
     top: -0px;
-<<<<<<< HEAD
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.welkom {
+    text-align: center;
+    margin: 20px;
+}
+
+.beschrijving {
+    margin: 20px;
+    text-align: center;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+#logo4 {
+    display: block;
+    margin: 20px auto;
+}
+
+
+.review-box h2 {
+    margin-bottom: 10px;
+}
+
+.review-box textarea {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.review-box .rating {
+    margin-bottom: 10px;
+}
+
+.review-box .star {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.review-box .star.selected {
+    color: gold;
+}
+
+.review-box .verstuur-knop {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.top-review-box {
+    margin: 20px;
+}
+
+.top-reviews {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
 }
 
-=======
->>>>>>> 83d4161df097e7ee28eb6d0c469866cefefae57b
-}
+

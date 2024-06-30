@@ -12,7 +12,10 @@ include "header.php";
     <h1>Bedankt voor het contact opnemen met Marsia Travels!</h1>
     <p class="spoedig">Wij nemen zo spoedig mogelijk contact met u op.</p>
     
+<<<<<<< HEAD
   
+=======
+>>>>>>> 7d05960793c62ce985091abae42364065bf95aa7
     <p class="terug"><a href="index.php">Terug naar de homepage</a></p>
 </body>
 </html>
