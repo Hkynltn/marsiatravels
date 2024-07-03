@@ -32,13 +32,17 @@ if (session_status() == PHP_SESSION_NONE) {
     </div>
     <section id="welkom-gebruiker">
         <?php
-        if (isset($_SESSION['voornaam']) && isset($_SESSION['gebruiker_id'])) {
-            echo "<h2>Hallo, " . $_SESSION['voornaam'] . "</h2>";
-            echo '<a href="account.php" class="login-button"><img src="assets/img/login.png" alt="Account"></a>';
-            echo '<a href="logout.php" class="logout-button"><h3> Logout </h3></a>';
-        } else {
-            echo '<a href="login.php" class="login-button"><img src="assets/img/login.png" alt="Login Button"></a>';
-        }
+    
+    
+    if (isset($_SESSION['voornaam']) && isset($_SESSION['gebruiker_id'])) {
+        echo "<h2>Hallo, " . htmlspecialchars($_SESSION['voornaam']) . "</h2>";
+        echo '<a href="mijn_account.php" class="login-button"><img src="assets/img/login.png" alt="Account"></a>';
+        echo '<a href="logout.php" class="logout-button"><h3>Logout</h3></a>';
+    } else {
+        echo '<a href="login.php" class="login-button"><img src="assets/img/login.png" alt="Login Button"></a>';
+    }
+    
+    
         ?>
     </section>
     <section>
@@ -49,6 +53,3 @@ if (session_status() == PHP_SESSION_NONE) {
 </header>
 </body>
 </html>
-
-
-

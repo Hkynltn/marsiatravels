@@ -1050,8 +1050,10 @@ body {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
+    min-height: 400px;
+    position: relative;
+    top: 40px;
 }
-
 .city-info div {
     font-size: 24px;
     font-weight: bold;
@@ -1062,7 +1064,7 @@ body {
     margin-bottom: 15px;
 }
 
-.book-button {
+.city-info a {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -1074,6 +1076,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: relative;
+    left: 200px;
 }
 
 .book-button:hover {
@@ -1081,7 +1085,7 @@ body {
 }
 
 
-.tehran{
+.tehran-titel{
     position: relative;
     top: -8px;
     left: -5px;
@@ -1094,12 +1098,8 @@ body {
     left: -5px;
 
 }
-.city-info{
-    position: relative;
-    top: 40px;
-}
 
-.parijs{
+.parijs-titel{
     position: relative;
     top: -8px;
     left: -5px;
@@ -1111,14 +1111,22 @@ body {
     font-size: 13px;
     left: -5px;
 }
-
+.erbil-titel{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
 .erbil-info{
     position: relative;
     top: -30px;
     font-size: 13px;
     left: -5px;
 }
-
+.buenos-aires-titel{
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
 .buenos-aires-info{
     position: relative;
     top: -30px;
@@ -1136,8 +1144,8 @@ body {
     width: 300px;
     position: relative;
     top: 30px;
-    left: 580px
-    
+    left: 580px;
+    margin-bottom: 200px;
 }
 
 .container-verwerking {
