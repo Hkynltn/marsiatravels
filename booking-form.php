@@ -11,7 +11,7 @@
                 </select>
                 <p>Aankomst:</p>
                 <select name="aankomst_land">
-                    <option value="Parijs">Parijs</option>
+                    <option <?php ?> value="Parijs">Parijs</option>
                     <option value="Buenos Aires">Buenos Aires</option>
                     <option value="Tehran">Tehran</option>
                     <option value="Erbil">Erbil</option>
