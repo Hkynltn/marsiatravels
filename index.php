@@ -22,14 +22,6 @@ $reviews = $conn->query($sql);
 ?>
 
 <section>
-Welkom <?php echo $_POST["naam"]; ?> <br><br>
-Email: <?php echo $_POST["email"]; ?> <br><br>
-Telefoon: <?php echo $_POST["telefoon"]; ?><br><br>
-Adres: <?php echo $_POST["adres"]; ?><br><br>
-Besteming: <?php echo $_POST["besteming"]; ?><br><br>
-Datum: <?php echo $_POST["datum"]; ?><br><br>
-Tijd: <?php echo $_POST["tijd"]; ?><br><br>
-Betaalwije: <?php echo $_POST["betaalwijze"]; ?>
 
     <h1 class="welkom">Welkom bij Marsia Travels!</h1>
     <div>
